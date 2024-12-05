@@ -1,0 +1,194 @@
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 0.9vw;
+  }
+}
+
+html.wf-design-mode .eraser-mask,
+html.wf-design-mode .metrics-mask {
+  visibility: hidden;
+}
+
+.nav-link-current {
+  display: none;
+}
+
+.nav-link.w--current .nav-link-current {
+  display: block;
+}
+
+.nav-link.w--current .nav-link-lottie {
+  display: none;
+}
+
+.text-color-dark strong,
+.text-color-dark bold {
+  font-weight: inherit;
+  color: var(--orange);
+}
+
+[normalize-stroke] svg path {
+  stroke-width: 0.5rem !important;
+}
+
+.post-content figure.w-richtext-figure-type-video {
+  width: 100%;
+  margin: 5rem 0;
+  max-width: none;
+  padding-bottom: 56.5% !important;
+}
+
+.post-content > *:first-child {
+  margin-top: 0px !important;
+}
+
+.post-content .key-concept-highlight {
+  color: #111;
+  background-color: #ffdba5;
+  cursor: pointer;
+}
+
+.has-sharpie strong,
+.has-sharpie b {
+  font-weight: 400 !important;
+}
+
+/* Zoho forms */
+.zoho-form > div {
+  width: 100% !important;
+  margin-top: -2rem;
+}
+
+.zoho-form form > br {
+  display: none;
+}
+
+.zoho-form form table {
+  background-color: transparent;
+  color: inherit !important;
+  width: 100% !important;
+}
+
+.zoho-form form table tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.zoho-form form table tbody tr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.zoho-form form table tr > td {
+  width: 100% !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  text-align: left !important;
+}
+
+.zoho-form form table tr > td:first-child {
+  color: var(--gray);
+  padding-top: 1rem;
+}
+
+.zoho-form form table tr > td input[type='text'],
+.zoho-form form table tr > td input[type='email'],
+.zoho-form form table tr > td input[type='password'],
+.zoho-form form table tr > td select,
+.zoho-form form table tr > td textarea {
+  height: 2rem;
+  width: 100% !important;
+  border: none;
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
+  outline: none;
+}
+
+.zoho-form form table tr > td input[type='text']:focus,
+.zoho-form form table tr > td input[type='email']:focus,
+.zoho-form form table tr > td input[type='password']:focus,
+.zoho-form form table tr > td select:focus,
+.zoho-form form table tr > td textarea:focus {
+  border-color: var(--orange);
+}
+
+.zoho-form form table tr > td input[type='submit'] {
+  font-size: 1.5rem !important;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color: var(--white) !important;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 10rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  outline: none;
+}
+
+.zoho-form form table tr > td input[type='submit']:hover,
+.zoho-form form table tr > td input[type='submit']:focus {
+  background-color: #ee7200;
+}
+
+.zoho-form form table tr > td input[type='reset'] {
+  border: none;
+  font-size: 1rem !important;
+  color: var(--gray) !important;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: var(--gray-light);
+  border-radius: 10rem;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.loading {
+  display: flex;
+}
+
+.load-hidden {
+  opacity: 0;
+}
+
+.disclaimer {
+  display: none !important;
+}
