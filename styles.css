@@ -192,3 +192,61 @@ html.lenis {
 .disclaimer {
   display: none !important;
 }
+
+.table-wrapper {
+  margin: 40px 0;
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pricing-table thead {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.pricing-table td {
+  font-size: 15px;
+  color: #333;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    font-size: 14px;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 10px 15px;
+  }
+}
